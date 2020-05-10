@@ -1,0 +1,10 @@
+version: '3'
+services:
+   front-controller2:
+          image: front_controller
+          container_name: front_controller2
+          ports:
+             - 80:80
+          volumes:
+             - /var/log/docker/front-controller:/var/log/nginx
+          restart: always
